@@ -71,12 +71,12 @@ function draw() {
        ball.display();
         
         if (ball.body.position.y>760){
-              if (ball.body.position.x < 100 || ball.body.position.x>725){
+              if (ball.body.position.x < 75 || ball.body.position.x>725){
                   score=score+500;      
                   ball=null;
                   if ( count>= 5) gameState ="end";                          
               }
-              else if (ball.body.position.x < 600 && ball.body.position.x > 276 ) {
+              else if (ball.body.position.x < 600 && ball.body.position.x > 226 ) {
                     score = score + 100;
                     ball=null;
                     if ( count>= 5) gameState ="end";
